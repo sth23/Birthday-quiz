@@ -1,7 +1,7 @@
 """
 birthday.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Sean Healey
+Credit: Tutorials
 Assignment:
 
 Your program will ask the user the following questions, in this order:
@@ -29,5 +29,17 @@ Example Session
   Hi Eric, what was the name of the month you were born in? September
   And what year were you born in, Eric? 1972
   And the day? 11
-  Eric, you are a fall baby of the stone age.
+  Eric, you are a fall baby of the Stone Age.
 """
+
+from datetime import datetime
+from calendar import month_name
+todaymonth = datetime.today().month
+todaydate = datetime.today().day
+
+month = month_name[todaymonth]
+
+name = input("Hello, what is your name? ")
+birth_month = input("Hi {0}, what was the name of the month you were born in? ".format(name))
+birth_year = input("And what year were you born in, {0}? ".format(name))
+birth_day = input("And the day? ".format(name))
