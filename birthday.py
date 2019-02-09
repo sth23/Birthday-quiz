@@ -52,6 +52,3 @@ elif birth_month.lower == "october" and birth_day == today_date:
     print("You were born on Halloween!")
 else:
     print("Something else")
-
-myapp = App()
-myapp.run()
