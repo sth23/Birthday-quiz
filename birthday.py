@@ -52,3 +52,4 @@ elif birth_month.lower == "october" and birth_day == 31:
     print("You were born on Halloween!")
 else:
     print("Something else")
+    print(birth_day)
