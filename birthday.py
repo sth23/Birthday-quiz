@@ -48,8 +48,7 @@ birth_day = int(input("And the day? ".format(name)))
 
 if today_month_name.lower() == birth_month.lower():
     print("Happy birthday!")
-elif birth_month.lower == "october" and birth_day == 31:
+elif birth_month.lower() == "october" and birth_day == 31:
     print("You were born on Halloween!")
 else:
     print("Something else")
-    print(birth_day)
