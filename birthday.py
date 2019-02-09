@@ -34,17 +34,17 @@ Example Session
 
 from datetime import datetime
 from calendar import month_name
-today_month = datetime.today().month
+today_month_num = datetime.today().month
 today_date = datetime.today().day
 
-month = month_name[today_month]
+today_month_name = month_name[today_month_num]
 
 name = input("Hello, what is your name? ")
 birth_month = input("Hi {0}, what was the name of the month you were born in? ".format(name))
 birth_year = int(input("And what year were you born in, {0}? ".format(name)))
 birth_day = int(input("And the day? ".format(name)))
 
-if today_month.lower() == birth_month.lower():
+if today_month_name.lower() == birth_month.lower():
     print("Happy birthday!")
 elif birth_month.lower == "october" and birth_day == today_date:
     print("You were born on Halloween!")
