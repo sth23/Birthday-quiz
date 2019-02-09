@@ -32,8 +32,6 @@ Example Session
   Eric, you are a fall baby of the Stone Age.
 """
 
-import ggame
-
 from datetime import datetime
 from calendar import month_name
 today_month_num = datetime.today().month
