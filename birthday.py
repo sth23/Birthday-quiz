@@ -41,15 +41,15 @@ today_date = datetime.today().day
 
 today_month_name = month_name[today_month_num]
 
-# Take inputs from user
+# Take user input
 name = input("Hello, what is your name? ")
 birth_month = input("Hi {0}, what was the name of the month you were born in? ".format(name))
 birth_year = int(input("And what year were you born in, {0}? ".format(name)))
 birth_day = int(input("And the day? ".format(name)))
 
-if today_month_name.lower() == birth_month.lower():
+if today_month_name.lower() == birth_month.lower(): # Check for birthday
     print("Happy birthday!")
-elif birth_month.lower() == "october" and birth_day == 31:
+elif birth_month.lower() == "october" and birth_day == 31: # Check for Halloween
     print("You were born on Halloween!")
 else:
     # Determine birth season
@@ -59,7 +59,7 @@ else:
         season = "spring"
     elif birth_month.lower() == "june" or birth_month.lower() == "july" or birth_month.lower() == "august":
         season = "summer"
-    else
+    else:
         season = "fall"
     # Determin era
     if birth_year >= 2000:
@@ -70,7 +70,7 @@ else:
         era = "eighties"
     else:
         era = "Stone Age"
-    print("{0}, you are a " + season + " baby of the " + era + ".".format(name))
+    print("{0}, you are a ".format(name) + season + " baby of the " + era + ".")
         
         
         
